@@ -8,6 +8,21 @@ body {
   padding-bottom: 100px;
 }
 
+a:hover,
+a:link,
+a:active {
+  text-decoration: none;
+  color: black !important;
+}
+
+a h1 {
+  color: black;
+}
+
+a p {
+  color:black;
+}
+
 .jumbotron {
   margin-top: 100px;
   border: 10px solid black;
