@@ -16,8 +16,14 @@
 
     </ul>
     <ul class="nav navbar-nav navbar-right">
-        <li>
-        <%= link_to "Blog", pages_about_path %>
+      <li>
+        <%= link_to 'NEW', posts_path, class: "nav-links" %>
+      </li>
+      <li>
+        <%= link_to 'SUBMIT', new_post_path, class: "nav-links" %>
+      </li>
+      <li>
+        <%= link_to "ABOUT", pages_about_path %>
       </li> 
     </ul>
   </div><!-- /.navbar-collapse -->
