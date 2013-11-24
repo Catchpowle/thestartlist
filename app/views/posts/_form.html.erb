@@ -20,25 +20,22 @@
     <ul class="list-group">
 
       <li class="list-group-item"><div class="form-group">
-        <%= f.label :title, "Name:" %><br>
-        <%= f.text_field :title, class: "form-control" %>
+        <%= f.text_field :title, class: "form-control", placeholder: "Project Name" %>
       </div></li>
 
       <li class="list-group-item"><div class="form-group">
-        <%= f.label :description, "Description:" %>
-        <%= f.text_area :description, class: "form-control" %>
+        <%= f.text_area :description, class: "form-control", placeholder: "Project Description" %>
       </div></li>
 
      <li class="list-group-item"><div class="form-group">
-        <%= f.label :url, "URL:" %><br>
-        <%= f.text_field :url, class: "form-control" %>
-        <span class="help-block">Format: https://example.com</span>
+       <%= f.text_field :url, class: "form-control", placeholder: "URL Format: https://example.com" %>
       </div></li>
 
     </ul>
 
     <div class="form-group">
       <%= f.submit class: "btn btn-default" %>
+      <%= link_to "Back", posts_path, class: "btn btn-default pull-right" %>
     </div>
   </div>
 <% end %>

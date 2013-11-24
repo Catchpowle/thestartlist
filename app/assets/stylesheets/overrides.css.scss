@@ -77,3 +77,33 @@ a p {
   border-bottom: 5px solid #AEB404;
   width: 100%;
 }
+
+.panel-default {
+  border-radius: 0px;
+  border: 10px solid black;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+
+}
+
+.panel-heading {
+  border-bottom: 10px solid black !important;
+}
+
+.form-control {
+  border-radius: 0px;
+  border: 3px solid black !important;
+  outline: none;
+  box-shadow:none !important;
+  background: #D8D8D8;
+}
+
+.btn-default {
+  border-radius: 0px;
+  margin: 10px;
+  border: 5px solid black;
+  background: #D8D8D8;
+}
+
+
