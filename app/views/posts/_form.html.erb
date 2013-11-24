@@ -1,0 +1,44 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="panel panel-default">
+
+    <div class="panel-heading">
+      <h2>Add Project Details</h2>
+    </div>
+
+    <ul class="list-group">
+
+      <li class="list-group-item"><div class="form-group">
+        <%= f.label :title, "Name:" %><br>
+        <%= f.text_field :title, class: "form-control" %>
+      </div></li>
+
+      <li class="list-group-item"><div class="form-group">
+        <%= f.label :description, "Description:" %>
+        <%= f.text_area :description, class: "form-control" %>
+      </div></li>
+
+     <li class="list-group-item"><div class="form-group">
+        <%= f.label :url, "URL:" %><br>
+        <%= f.text_field :url, class: "form-control" %>
+        <span class="help-block">Format: https://example.com</span>
+      </div></li>
+
+    </ul>
+
+    <div class="form-group">
+      <%= f.submit class: "btn btn-default" %>
+    </div>
+  </div>
+<% end %>
