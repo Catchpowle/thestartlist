@@ -1,31 +1,14 @@
-<h1>Listing posts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>URL</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="jumbotron">
+  <h1>Stepping Up</h1>
+</div> <!-- jumbotron -->
     <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.description %></td>
-        <td><%= post.url %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+<a href=<%= post.url %>>
+  <div class="postg">
+    <div class="vote pull-right"></div>
+    <h1><%= post.title %></h1>
+    <p><%= post.description %></p>
+    <!-- for when you want to delete things #unscaleable ;) -->
+    <!--<%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p></li> -->
+  </div> <!-- postg -->
+</a>
+<% end %>
