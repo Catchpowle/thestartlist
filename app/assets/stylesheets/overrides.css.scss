@@ -1,6 +1,9 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$jumbotron-bg: white;
+$navbar-default-bg: white;
+$body-bg: white;
 
 @import "bootstrap";
 body {
@@ -8,12 +11,12 @@ body {
 }
 
 .navbar-default .navbar-brand {
-color: black;
+color: #2c3e50;
 font-size: 30px;
 }
 
 .navbar-default .navbar-nav > li > a {
-color: black;
+color: #2c3e50;
 font-weight: bolder;
 }
 
@@ -21,97 +24,97 @@ a:hover,
 a:link,
 a:active {
   text-decoration: none;
-  color: black !important;
+  color: #f1c40f !important;
 }
 
 a h1 {
-  color: black;
+  color: #2c3e50;
 }
 
 a p {
-  color:black;
+  color:#34495e;
 }
 
 .jumbotron {
   margin-top: 100px;
-  border: 10px solid black;
+  border: 10px solid #2c3e50;
   border-radius: 0px !important;
+  color: #2c3e50;
 }
 
 .btn-j {
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
+  padding: 10px;
+  font-size: 20px;
 }
 
 .navbar {
   background-color: white;
   border-top: 0px solid black;
-  border-right: 10px solid black;
-  border-left: 10px solid black;
-  border-bottom: 10px solid black;  border-radius: 0px !important;
+  // border-right: 10px solid #2c3e50;
+  // border-left: 10px solid #2c3e50;
+  border-bottom: 10px solid #2c3e50;  border-radius: 0px !important;
 }
 
 .post1 {
   margin-top: 0px !important;
   border-top: 0px solid #000000;
-  border-right: 20px solid #000000;
+  border-right: 20px solid #2ecc71;
   border-left: 0px solid #000000;
-  border-bottom: 5px solid #000000;
+  border-bottom: 5px solid #2ecc71;
   width: 100%;
 }
 .post2 {
   margin-top: 0px !important;
   border-top: 0px solid #B40431;
-  border-right: 20px solid #B40431;
+  border-right: 20px solid #3498db;
   border-left: 0px solid #B40431;
-  border-bottom: 5px solid #B40431;
+  border-bottom: 5px solid #3498db;
   width: 100%;
 }
 .post3 {
   margin-top: 0px !important;
   border-top: 0px solid #0404B4;
-  border-right: 20px solid #0404B4;
+  border-right: 20px solid #9b59b6;
   border-left: 0px solid #0404B4;
-  border-bottom: 5px solid #0404B4;
+  border-bottom: 5px solid #9b59b6;
   width: 100%;
 }
 .post4 {
   margin-top: 0px !important;
   border-top: 0px solid #088A08;
-  border-right: 20px solid #088A08;
+  border-right: 20px solid #e74c3c;
   border-left: 0px solid #088A08;
-  border-bottom: 5px solid #088A08;
+  border-bottom: 5px solid #e74c3c;
   width: 100%;
 }
 .post5 {
   margin-top: 0px !important;
   border-top: 0px solid #AEB404;
-  border-right: 20px solid #AEB404;
+  border-right: 20px solid #e67e22;
   border-left: 0px solid #AEB404;
-  border-bottom: 5px solid #AEB404;
+  border-bottom: 5px solid #e67e22;
   width: 100%;
 }
 
 .postg {
   margin: 10px !important;
-  border-top: 10px solid black;
-  border-right: 10px solid black;
-  border-left: 10px solid black;
-  border-bottom: 10px solid black;
+  // border-top: 10px solid black;
+  // border-right: 10px solid black;
+  // border-left: 10px solid black;
+  border-bottom: 1px solid #bdc3c7;
   padding: 10px;
 }
 
-.postg:hover {
-  background-color:#F78181;
-}
+// .postg:hover {
+//   background-color:#F78181;
+// }
 
 .vote {
   width: 50px;
   height:50px;
   margin: 15px;
-  border-left: 4px solid black;
-  border-bottom: 4px solid black;
+  border-left: 4px solid #ecf0f1;
+  border-bottom: 4px solid #ecf0f1;
   border-right: 40px solid transparent;
   border-top: 40px solid transparent;
   transform: rotate(135deg);
@@ -120,13 +123,13 @@ a p {
 }
 
 .vote:hover {
-  border-left: 4px solid white;
-  border-bottom: 4px solid white;
+  border-left: 4px solid #f1c40f;
+  border-bottom: 4px solid #f1c40f;
 }
 
 .panel-default {
   border-radius: 0px;
-  border: 10px solid black;
+  border: 10px solid #2c3e50;
   width: 50%;
   margin: auto;
   margin-top: 50px;
@@ -134,26 +137,26 @@ a p {
 }
 
 .panel-heading {
-  border-bottom: 10px solid black !important;
+  border-bottom: 10px solid #2c3e50 !important;
 }
 
 .form-control {
   border-radius: 0px;
-  border: 3px solid black !important;
+  border: 1px solid #2c3e50 !important;
   outline: none;
   box-shadow:none !important;
-  background: #D8D8D8;
+  background: white;
 }
 
 .btn-default {
   border-radius: 0px;
   margin: 10px;
-  border: 5px solid black;
-  background: #D8D8D8;
+  border: 1px solid #2c3e50;
+  background: white;
 }
 
 .form-control:focus {
-  border: 3px solid white !important;
+  border: 1px solid #f1c40f !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
